@@ -535,12 +535,7 @@ void CHudMainMenuOverride::ApplySchemeSettings( IScheme *scheme )
 		m_pStoreButton->SetVisible(false);
 	}
 
-	m_pWatchStreamButton = dynamic_cast<EditablePanel*>(FindChildByName("WatchStreamButton"));
-	if (m_pWatchStreamButton)
-	{
-		m_pWatchStreamButton->SetVisible(false);
-		m_pWatchStreamButton->SetEnabled(false);
-	}
+
 
 	m_pQuestLogButton = dynamic_cast<EditablePanel*>(FindChildByName("QuestLogButton"));
 	if (m_pQuestLogButton)
@@ -571,17 +566,9 @@ void CHudMainMenuOverride::ApplySchemeSettings( IScheme *scheme )
 	m_pMOTDNextButton = dynamic_cast<CExImageButton*>( m_pMOTDPanel->FindChildByName("MOTD_NextButton") );
 	m_pMOTDURLButton = dynamic_cast<CExButton*>( m_pMOTDPanel->FindChildByName("MOTD_URLButton") );
 
-	// m_pNotificationsShowPanel shows number of unread notifications. Pressing it pops up the first notification.
-	m_pNotificationsShowPanel = dynamic_cast<vgui::EditablePanel*>( FindChildByName("Notifications_ShowButtonPanel") );
 
-	m_pNotificationsShowPanel->SetVisible(false);
 
 	m_iNotiPanelWide = m_pNotificationsPanel->GetWide();
-
-	// m_pMOTDShowPanel shows that the player has an unread MOTD. Pressing it pops up the MOTD.
-	m_pMOTDShowPanel = dynamic_cast<vgui::EditablePanel*>( FindChildByName("MOTD_ShowButtonPanel") );
-	m_pMOTDShowPanel->SetVisible(false);
-
 	vgui::EditablePanel* pHeaderContainer = dynamic_cast<vgui::EditablePanel*>( m_pMOTDPanel->FindChildByName( "MOTD_HeaderContainer" ) );
 	if ( pHeaderContainer )
 	{
