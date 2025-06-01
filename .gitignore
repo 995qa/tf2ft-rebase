@@ -36,6 +36,9 @@ server.pdb
 server.dll
 server.lib
 
+mod_tf_win64.exe
+mod_tf_win64.pdb
+
 client.so
 client.so.dbg
 server.so
