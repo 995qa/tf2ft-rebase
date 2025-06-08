@@ -137,6 +137,19 @@ void PromptOrFireCommand( const char* pszCommand )
 	}
 }
 
+void QuitorDisconnect(void)
+{
+	if (engine->IsInGame())
+	{
+		engine->ClientCmd("disconnect");
+	}
+	else
+	{
+		engine->ClientCmd("gamemenucommand quit");
+	}
+}
+static ConCommand tfft_quit("tfft_quit", QuitorDisconnect, "Disconnects if in-game, shows quit prompt when not.", FCVAR_NONE);
+
 //-----------------------------------------------------------------------------
 // Purpose:
 //-----------------------------------------------------------------------------

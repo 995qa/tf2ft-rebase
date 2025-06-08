@@ -106,7 +106,7 @@ public:
 	void		 SetNotificationsButtonVisible( bool bVisible );
 	void		 SetNotificationsPanelVisible( bool bVisible );
 	void		 AdjustNotificationsPanelHeight();
-
+	void QuitorDisconnect();
 	void		 SetMOTDButtonVisible( bool bVisible );
 	void		 SetMOTDVisible( bool bVisible );
 	void		 SetQuestMapVisible( bool bVisible );
