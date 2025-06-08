@@ -44,6 +44,8 @@ Weapons I may add:
 
 Mini-crits when it normally crits
 
+-50 Health
+
 
 ## Crowbar (All-Class)
 
