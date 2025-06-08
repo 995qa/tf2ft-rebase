@@ -75,6 +75,22 @@
 		}
 	}
 	
+	"TFLogoImage"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"TFLogoImage"
+		"xpos"			"c-290"
+		"ypos"			"32"
+		"zpos"			"1"
+		"wide"			"256"
+		"tall"			"128"
+		"visible"		"1"
+		"enabled"		"1"
+		"image"			"../logo/tfft_logo"
+		"scaleImage"	"1"
+		"mouseinputenabled"	"0"
+	}	
+	
 	"FindServersButton"
 	{
 		"ControlName"	"CExImageButton"
