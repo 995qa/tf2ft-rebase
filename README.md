@@ -42,6 +42,8 @@ Kalashnikov (Heavy)
 
 +150% reload time
 
+Mini-crits when it normally crits
+
 
 Crowbar (All-Class)
 
