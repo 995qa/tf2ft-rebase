@@ -15,21 +15,33 @@ Spycicle (Now has Silent Killer)
 Weapons I may add:
 
 Fast-Thrower (Pyro)
+
 +30% Flame Velocity
+
 +30% Damage
+
 -50% Afterburn time
+
 +100% Airblast cost
+
 +20% Ammo cost
 
 Kalashnikov (Heavy)
+
 (Comparing to Sniper SMG)
+
 +100% damage
+
 -25% bullet spread
+
 +50% fire rate
+
 +10 speed
+
 +150% reload time
 
 Crowbar (All-Class)
+
 Reskin of Scout's Bat basically
 
 # Source SDK 2013
