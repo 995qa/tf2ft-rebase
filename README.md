@@ -15,7 +15,7 @@ Spycicle (Now has Silent Killer)
 Weapons I may add:
 
 
-Fast-Thrower (Pyro)
+## Fast-Thrower (Pyro)
 
 +30% Flame Velocity
 
@@ -28,7 +28,7 @@ Fast-Thrower (Pyro)
 +20% Ammo cost
 
 
-Kalashnikov (Heavy)
+## Kalashnikov (Heavy)
 
 (Comparing to Sniper SMG)
 
@@ -45,12 +45,12 @@ Kalashnikov (Heavy)
 Mini-crits when it normally crits
 
 
-Crowbar (All-Class)
+## Crowbar (All-Class)
 
 Reskin of Scout's Bat basically
 
 
-If you have any weapon ideas, dm me
+## If you have any weapon ideas, dm me
 
 # Source SDK 2013
 
