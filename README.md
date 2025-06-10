@@ -2,6 +2,7 @@
 
 TF2:FT is a mod for TF2 which is planned to add new weapons and revert some weapons.
 I have reverted the following weapons:
+
 Baby Face Blaster
 
 Backburner
@@ -13,6 +14,8 @@ Razorback
 Tribalman's Shiv
 
 Your Eternal Reward
+
+
 
 Some weapons have some stats reverted, but some stats stay:
 
