@@ -44,7 +44,7 @@ No random crits
 
 ## Crowbar (All-Class) (implemented, need to fix backpack icon)
 
-Reskin of Scout's Bat basically
+Reskin of the Frying Pan
 
 
 ## If you have any weapon ideas, dm me
