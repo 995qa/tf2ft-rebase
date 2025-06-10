@@ -58,6 +58,21 @@ Reskin of the Frying Pan
 
 ## If you have any weapon ideas, dm me
 
+# Credits
+
+I'm not an animator or modeler, so I have used the following mod's assets for this:
+
+[TF2 All-Class Crowbar (SFM Beta version)](https://gamebanana.com/mods/198771)
+
+SilentFox3 did texture/model edits to the crowbar found in the SFM Beta leak and also re-rigged it.
+
+[AK47](https://gamebanana.com/mods/197796)
+
+I used the model and textures to make the AK.
+
+
+
+
 # Source SDK 2013
 
 Source code for Source SDK 2013.
