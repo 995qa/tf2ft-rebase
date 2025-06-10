@@ -76,8 +76,8 @@ ConVar tf_movement_lost_footing_restick( "tf_movement_lost_footing_restick", "50
                                          "Early escape the lost footing condition if the player is moving slower than this across the ground" );
 ConVar tf_movement_lost_footing_friction( "tf_movement_lost_footing_friction", "0.1", FCVAR_REPLICATED | FCVAR_CHEAT,
                                           "Ground friction for players who have lost their footing" );
-ConVar tfft_autojump("tf_autojump", "0", FCVAR_NOTIFY | FCVAR_REPLICATED, "Automatically jump while holding the jump button down");
-ConVar tfft_duckjump("tf_duckjump", "0", FCVAR_NOTIFY | FCVAR_REPLICATED, "Toggles jumping while ducked");
+ConVar tfft_autojump("tfft_autojump", "0", FCVAR_NOTIFY | FCVAR_REPLICATED, "Automatically jump while holding the jump button down");
+ConVar tfft_duckjump("tfft_duckjump", "0", FCVAR_NOTIFY | FCVAR_REPLICATED, "Toggles jumping while ducked");
 ConVar tfft_allowbunnyhopping("tfft_allowbunnyhopping", "0", FCVAR_NOTIFY | FCVAR_REPLICATED, "Removes anti-bhop patch");
 
 extern ConVar cl_forwardspeed;
