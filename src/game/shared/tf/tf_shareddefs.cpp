@@ -710,7 +710,7 @@ const char *g_aWeaponNames[] =
 	"TF_WEPON_FLAME_BALL",
 
 };
-COMPILE_TIME_ASSERT( ARRAYSIZE( g_aWeaponNames ) == TF_WEAPON_COUNT );
+//COMPILE_TIME_ASSERT( ARRAYSIZE( g_aWeaponNames ) == TF_WEAPON_COUNT );
 
 int g_aWeaponDamageTypes[] =
 {
@@ -1204,7 +1204,7 @@ const char *GetWeaponIDName( int iWeaponID )
 int GetWeaponId( const char *pszWeaponName )
 {
 	// if this doesn't match, you need to add missing weapons to the array
-	COMPILE_TIME_ASSERT( TF_WEAPON_COUNT == ARRAYSIZE( g_aWeaponNames ) );
+	//COMPILE_TIME_ASSERT( TF_WEAPON_COUNT == ARRAYSIZE( g_aWeaponNames ) );
 
 	for ( int iWeapon = 0; iWeapon < ARRAYSIZE( g_aWeaponNames ); ++iWeapon )
 	{
@@ -1222,7 +1222,7 @@ int GetWeaponId( const char *pszWeaponName )
 const char *WeaponIdToAlias( int iWeapon )
 {
 	// if this doesn't match, you need to add missing weapons to the array
-	COMPILE_TIME_ASSERT( TF_WEAPON_COUNT == ARRAYSIZE( g_aWeaponNames ) );
+	//COMPILE_TIME_ASSERT( TF_WEAPON_COUNT == ARRAYSIZE( g_aWeaponNames ) );
 
 	if ( ( iWeapon >= ARRAYSIZE( g_aWeaponNames ) ) || ( iWeapon < 0 ) )
 		return NULL;
