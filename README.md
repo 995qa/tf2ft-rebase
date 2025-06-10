@@ -28,7 +28,7 @@ Weapons I may add:
 +20% Ammo cost
 
 
-## Kalashnikov (Heavy)
+## Kalashnikov (Sniper) (implemented, need to change backpack icon)
 
 (Comparing to Sniper SMG)
 
@@ -36,18 +36,13 @@ Weapons I may add:
 
 -25% bullet spread
 
-+50% fire rate
++25% reload time
 
-+10 speed
+-15 Health
 
-+150% reload time
+No random crits
 
-Mini-crits when it normally crits
-
--50 Health
-
-
-## Crowbar (All-Class)
+## Crowbar (All-Class) (implemented, need to fix backpack icon)
 
 Reskin of Scout's Bat basically
 
