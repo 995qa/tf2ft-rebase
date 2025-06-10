@@ -24,7 +24,7 @@ Spycicle (Now has Silent Killer)
 Weapons I may add:
 
 
-## Fast-Thrower (Pyro)
+## Fast-Thrower (Pyro) (to-do)
 
 +30% Flame Velocity
 
