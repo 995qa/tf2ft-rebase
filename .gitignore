@@ -1,5 +1,15 @@
 # Files to ignore when considering what GIT should commit.
 
+# Demo files
+*.dem
+mod_tf/demos
+
+# Map files
+mod_tf/maps
+
+# Configs
+mod_tf/cfg
+
 # Visual Studio 
 *.suo
 *.user
