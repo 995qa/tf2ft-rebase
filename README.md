@@ -2,20 +2,29 @@
 
 TF2:FT is a mod for TF2 which is planned to add new weapons and revert some weapons.
 I have reverted the following weapons:
+
 Baby Face Blaster
+
 Backburner
+
 Bushwacka
+
 Razorback
+
 Tribalman's Shiv
+
 Your Eternal Reward
 
+
+
 Some weapons have some stats reverted, but some stats stay:
+
 Spycicle (Now has Silent Killer)
 
 Weapons I may add:
 
 
-## Fast-Thrower (Pyro)
+## Fast-Thrower (Pyro) (to-do)
 
 +30% Flame Velocity
 
@@ -28,7 +37,7 @@ Weapons I may add:
 +20% Ammo cost
 
 
-## Kalashnikov (Heavy)
+## Kalashnikov (Sniper) (implemented, need to change backpack icon)
 
 (Comparing to Sniper SMG)
 
@@ -36,89 +45,34 @@ Weapons I may add:
 
 -25% bullet spread
 
-+50% fire rate
++25% reload time
 
-+10 speed
+-15 Health
 
-+150% reload time
+No random crits
 
-Mini-crits when it normally crits
+## Crowbar (All-Class) (implemented, need to fix backpack icon)
 
--50 Health
-
-
-## Crowbar (All-Class)
-
-Reskin of Scout's Bat basically
+Reskin of the Frying Pan
 
 
 ## If you have any weapon ideas, dm me
 
-# Source SDK 2013
+# Credits
 
-Source code for Source SDK 2013.
+I'm not an animator or modeler, so I have used the following mod's assets for this:
 
-Contains the game code for Half-Life 2, HL2: DM and TF2.
+[TF2 All-Class Crowbar (SFM Beta version)](https://gamebanana.com/mods/198771)
 
-**Now including Team Fortress 2! ✨**
+SilentFox3 did texture/model edits to the crowbar found in the SFM Beta leak and also re-rigged it.
 
-## Build instructions
+[AK47](https://gamebanana.com/mods/197796)
 
-Clone the repository using the following command:
+I used the model and textures to make the AK.
 
-`git clone https://github.com/ValveSoftware/source-sdk-2013`
 
-### Windows
 
-Requirements:
- - Source SDK 2013 Multiplayer installed via Steam
- - Visual Studio 2022 with the following workload and components:
-   - Desktop development with C++:
-     - MSVC v143 - VS 2022 C++ x64/x86 build tools (Latest)
-     - Windows 11 SDK (10.0.22621.0) or Windows 10 SDK (10.0.19041.1)
- - Python 3.13 or later
 
-Inside the cloned directory, navigate to `src`, run:
-```bat
-createallprojects.bat
-```
-This will generate the Visual Studio project `everything.sln` which will be used to build your mod.
-
-Then, on the menu bar, go to `Build > Build Solution`, and wait for everything to build.
-
-You can then select the `Client (Mod Name)` project you wish to run, right click and select `Set as Startup Project` and hit the big green `> Local Windows Debugger` button on the tool bar in order to launch your mod.
-
-The default launch options should be already filled in for the `Release` configuration.
-
-### Linux
-
-Requirements:
- - Source SDK 2013 Multiplayer installed via Steam
- - podman
-
-Inside the cloned directory, navigate to `src`, run:
-```bash
-./buildallprojects
-```
-
-This will build all the projects related to the SDK and your mods automatically against the Steam Runtime.
-
-You can then, in the root of the cloned directory, you can navigate to `game` and run your mod by launching the build launcher for your mod project, eg:
-```bash
-./mod_tf
-```
-
-*Mods that are distributed on Steam MUST be built against the Steam Runtime, which the above steps will automatically do for you.*
-
-## Distributing your Mod
-
-There is guidance on distributing your mod both on and off Steam available at the following link:
-
-https://partner.steamgames.com/doc/sdk/uploading/distributing_source_engine
-
-## Additional Resources
-
-- [Valve Developer Wiki](https://developer.valvesoftware.com/wiki/Source_SDK_2013)
 
 ## License
 
