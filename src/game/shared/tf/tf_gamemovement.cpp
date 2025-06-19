@@ -77,6 +77,9 @@ ConVar tf_movement_lost_footing_restick( "tf_movement_lost_footing_restick", "50
                                          "Early escape the lost footing condition if the player is moving slower than this across the ground" );
 ConVar tf_movement_lost_footing_friction( "tf_movement_lost_footing_friction", "0.1", FCVAR_REPLICATED | FCVAR_CHEAT,
                                           "Ground friction for players who have lost their footing" );
+ConVar tfft_autojump("tfft_autojump", "0", FCVAR_NOTIFY | FCVAR_REPLICATED, "Automatically jump while holding the jump button down");
+ConVar tfft_duckjump("tfft_duckjump", "0", FCVAR_NOTIFY | FCVAR_REPLICATED, "Toggles jumping while ducked");
+ConVar tfft_allowbunnyhopping("tfft_allowbunnyhopping", "0", FCVAR_NOTIFY | FCVAR_REPLICATED, "Removes anti-bhop patch");
 
 extern ConVar cl_forwardspeed;
 extern ConVar cl_backspeed;
@@ -1223,19 +1226,25 @@ bool CTFGameMovement::CheckJumpButton()
 	if ( player->GetFlags() & FL_DUCKING )
 	{
 		// Let a scout do it.
-		bool bAllow = ( bScout && !bOnGround );
+		bool bAllow = ( bScout && !bOnGround ) || tfft_duckjump.GetBool();
 
 		if ( !bAllow )
 			return false;
 	}
 
 	// Cannot jump while in the unduck transition.
-	if ( ( player->m_Local.m_bDucking && (  player->GetFlags() & FL_DUCKING ) ) || ( player->m_Local.m_flDuckJumpTime > 0.0f ) )
+	if ( ( player->m_Local.m_bDucking && (  player->GetFlags() & FL_DUCKING ) ) || ( player->m_Local.m_flDuckJumpTime > 0.0f ) && !tfft_duckjump.GetBool() )
 		return false;
 
 	// Cannot jump again until the jump button has been released.
 	if ( mv->m_nOldButtons & IN_JUMP )
-		return false;
+	{
+		if (!bOnGround)
+			return false;
+
+		if (!tfft_autojump.GetBool())
+			return false;
+	}
 
 	// In air, so ignore jumps 
 	// (unless you are a scout or ghost or parachute
@@ -1261,7 +1270,11 @@ bool CTFGameMovement::CheckJumpButton()
 		return true;
 	}
 
-	PreventBunnyJumping();
+	if ( !tfft_allowbunnyhopping.GetBool() )
+	{
+		PreventBunnyJumping();
+	}
+
 
 	// Start jump animation and player sound (specific TF animation and flags).
 	m_pTFPlayer->DoAnimationEvent( PLAYERANIMEVENT_JUMP );

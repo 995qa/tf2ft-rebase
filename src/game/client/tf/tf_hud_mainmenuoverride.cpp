@@ -137,6 +137,28 @@ void PromptOrFireCommand( const char* pszCommand )
 	}
 }
 
+void CQuit(bool bConfirmed, void* pContext)
+{
+	if (bConfirmed)
+	{
+		engine->ClientCmd_Unrestricted("quit");
+	}
+}
+
+void QuitorDisconnect(void)
+{
+	if (engine->IsInGame())
+	{
+		engine->ClientCmd("disconnect");
+	}
+	else
+	{
+		CHudMainMenuOverride* pMMOverride = (CHudMainMenuOverride*)(gViewPortInterface->FindPanelByName(PANEL_MAINMENUOVERRIDE));
+		ShowConfirmDialog("#MMenu_PromptQuit_Title", "#MMenu_PromptQuit_Body", "#TF_Coach_Yes", "#TF_Coach_No", CQuit, pMMOverride);
+	}
+}
+static ConCommand tfft_quit("tfft_quit", QuitorDisconnect, "Disconnects if in-game, shows quit prompt when not.", FCVAR_NONE);
+
 //-----------------------------------------------------------------------------
 // Purpose:
 //-----------------------------------------------------------------------------
@@ -535,12 +557,7 @@ void CHudMainMenuOverride::ApplySchemeSettings( IScheme *scheme )
 		m_pStoreButton->SetVisible(false);
 	}
 
-	m_pWatchStreamButton = dynamic_cast<EditablePanel*>(FindChildByName("WatchStreamButton"));
-	if (m_pWatchStreamButton)
-	{
-		m_pWatchStreamButton->SetVisible(false);
-		m_pWatchStreamButton->SetEnabled(false);
-	}
+
 
 	m_pQuestLogButton = dynamic_cast<EditablePanel*>(FindChildByName("QuestLogButton"));
 	if (m_pQuestLogButton)
@@ -571,8 +588,6 @@ void CHudMainMenuOverride::ApplySchemeSettings( IScheme *scheme )
 	m_pMOTDNextButton = dynamic_cast<CExImageButton*>( m_pMOTDPanel->FindChildByName("MOTD_NextButton") );
 	m_pMOTDURLButton = dynamic_cast<CExButton*>( m_pMOTDPanel->FindChildByName("MOTD_URLButton") );
 
-	// m_pNotificationsShowPanel shows number of unread notifications. Pressing it pops up the first notification.
-	m_pNotificationsShowPanel = dynamic_cast<vgui::EditablePanel*>( FindChildByName("Notifications_ShowButtonPanel") );
 
 	m_pNotificationsShowPanel->SetVisible( true );
 
@@ -581,7 +596,6 @@ void CHudMainMenuOverride::ApplySchemeSettings( IScheme *scheme )
 	// m_pMOTDShowPanel shows that the player has an unread MOTD. Pressing it pops up the MOTD.
 	m_pMOTDShowPanel = dynamic_cast<vgui::EditablePanel*>( FindChildByName("MOTD_ShowButtonPanel") );
 	m_pMOTDShowPanel->SetVisible(true);
-
 	vgui::EditablePanel* pHeaderContainer = dynamic_cast<vgui::EditablePanel*>( m_pMOTDPanel->FindChildByName( "MOTD_HeaderContainer" ) );
 	if ( pHeaderContainer )
 	{
@@ -2017,6 +2031,12 @@ void CHudMainMenuOverride::OnCommand( const char *command )
 		}
 		m_hMutePlayerDialog->Activate();
 	}
+
+	else if (FStrEq("OpenQuickPlayDialog", command))
+	{
+		return;
+	}
+
 	else if ( FStrEq( "open_rank_type_menu", command ) )
 	{
 		if ( m_pRankTypeMenu )

@@ -1,5 +1,15 @@
 # Files to ignore when considering what GIT should commit.
 
+# Demo files
+*.dem
+mod_tf/demos
+
+# Map files
+mod_tf/maps
+
+# Configs
+mod_tf/cfg
+
 # Visual Studio 
 *.suo
 *.user
@@ -35,6 +45,9 @@ client.lib
 server.pdb
 server.dll
 server.lib
+
+mod_tf_win64.exe
+mod_tf_win64.pdb
 
 client.so
 client.so.dbg

@@ -11,8 +11,11 @@
 		"wide"			"f0"
 		"tall"			"480"
 		
+<<<<<<< HEAD:game/betterfortress/resource/ui/mainmenuoverride.res
 //		"bgcolor_override"	"0 0 0 240"
 		
+=======
+>>>>>>> tfft-old/master:game/mod_tf/resource/ui/mainmenuoverride.res
 		"update_url"	"https://store.steampowered.com/news/?filter=updates&appids=440"
 		"blog_url"		"https://www.teamfortress.com/"
 		
@@ -75,6 +78,7 @@
 				}				
 			}		
 		}
+<<<<<<< HEAD:game/betterfortress/resource/ui/mainmenuoverride.res
 		
 		"SaxxySettings"
 		{
@@ -226,6 +230,10 @@
 		}
 	}
 					
+=======
+	}
+	
+>>>>>>> tfft-old/master:game/mod_tf/resource/ui/mainmenuoverride.res
 	"TFLogoImage"
 	{
 		"ControlName"	"ImagePanel"
@@ -234,14 +242,22 @@
 		"ypos"			"32"
 		"zpos"			"1"
 		"wide"			"256"
+<<<<<<< HEAD:game/betterfortress/resource/ui/mainmenuoverride.res
 		"tall"			"64"
 		"visible"		"1"
 		"enabled"		"1"
 		"image"			"../logo/new_tf2_logo"
+=======
+		"tall"			"128"
+		"visible"		"1"
+		"enabled"		"1"
+		"image"			"../logo/tfft_logo"
+>>>>>>> tfft-old/master:game/mod_tf/resource/ui/mainmenuoverride.res
 		"scaleImage"	"1"
 		"mouseinputenabled"	"0"
 	}	
 	
+<<<<<<< HEAD:game/betterfortress/resource/ui/mainmenuoverride.res
 	"TFCharacterImage"
 	{
 		// "ControlName"	"ImagePanel"
@@ -2321,6 +2337,15 @@
 		"xpos"			"c-165"
 		"ypos"			"rs1-18"
 		"wide"			"100"
+=======
+	"FindServersButton"
+	{
+		"ControlName"	"CExImageButton"
+		"fieldName"		"FindServersButton"
+		"xpos"			"c-281"
+		"ypos"			"145"
+		"wide"			"240"
+>>>>>>> tfft-old/master:game/mod_tf/resource/ui/mainmenuoverride.res
 		"tall"			"26"
 		"autoResize"	"0"
 		"pinCorner"		"3"
@@ -2334,6 +2359,7 @@
 		"dulltext"		"0"
 		"brighttext"	"0"
 		"default"		"1"
+<<<<<<< HEAD:game/betterfortress/resource/ui/mainmenuoverride.res
 		"labeltext" "#MMenu_Shop"
 		"command" "engine open_store"
 		"proportionaltoparent"	"1"
@@ -2344,6 +2370,25 @@
 		"paintbackground"	"1"
 				
 		"image_drawcolor"	"235 226 202 255"
+=======
+		"command"		"openserverbrowser"
+		"labeltext"		"#MMenu_StartPlaying"
+		"sound_depressed"	"UI/buttonclick.wav"
+		"sound_released"	"UI/buttonclickrelease.wav"
+		"proportionaltoparent"	"1"
+			
+        "border_default"    "MainMenuButtonDefault"
+        "border_armed"      "MainMenuButtonArmed"
+		"paintbackground"   "0"
+            
+        "defaultFgColor_override" "46 43 42 255"
+        "armedFgColor_override" "235 226 202 255"
+        "depressedFgColor_override" "46 43 42 255"
+            
+        "image_drawcolor"   "117 107 94 255"
+        "image_armedcolor"  "235 226 202 255"
+			
+>>>>>>> tfft-old/master:game/mod_tf/resource/ui/mainmenuoverride.res
 		"SubImage"
 		{
 			"ControlName"	"ImagePanel"
@@ -2356,6 +2401,7 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"scaleImage"	"1"
+<<<<<<< HEAD:game/betterfortress/resource/ui/mainmenuoverride.res
 			"image" "glyph_store"
 		}		
 	}
@@ -2369,11 +2415,26 @@
 		"zpos"			"1"
 		"wide"			"30"
 		"tall"			"25"
+=======
+			"image"			"glyph_multiplayer"
+		}		
+	}
+	
+	"SettingsButtonSDK"
+	{
+		"ControlName"	"CExImageButton"
+		"fieldName"		"SettingsButtonSDK"
+		"xpos"			"c-281"
+		"ypos"			"173"
+		"wide"			"240"
+		"tall"			"26"
+>>>>>>> tfft-old/master:game/mod_tf/resource/ui/mainmenuoverride.res
 		"autoResize"	"0"
 		"pinCorner"		"3"
 		"visible"		"1"
 		"enabled"		"1"
 		"tabPosition"	"0"
+<<<<<<< HEAD:game/betterfortress/resource/ui/mainmenuoverride.res
 		"labelText"		""
 		"font"			"HudFontSmallBold"
 		"textAlignment"	"west"
@@ -2671,11 +2732,41 @@
 		"sound_released"	"UI/buttonclickrelease.wav"
 		
 		"image_drawcolor"	"235 226 202 255"
+=======
+		"textinsetx"	"25"
+		"use_proportional_insets" "1"
+		"font"			"HudFontSmallBold"
+		"textAlignment"	"west"
+		"dulltext"		"0"
+		"brighttext"	"0"
+		"default"		"1"
+		"command"		"openoptionsdialog"
+		"labeltext"		"#MMenu_Tooltip_Options"
+		"sound_depressed"	"UI/buttonclick.wav"
+		"sound_released"	"UI/buttonclickrelease.wav"
+		"proportionaltoparent"	"1"
+			
+        "border_default"    "MainMenuButtonDefault"
+        "border_armed"      "MainMenuButtonArmed"
+		"paintbackground"   "0"
+            
+        "defaultFgColor_override" "46 43 42 255"
+        "armedFgColor_override" "235 226 202 255"
+        "depressedFgColor_override" "46 43 42 255"
+            
+        "image_drawcolor"   "117 107 94 255"
+        "image_armedcolor"  "235 226 202 255"
+			
+>>>>>>> tfft-old/master:game/mod_tf/resource/ui/mainmenuoverride.res
 		"SubImage"
 		{
 			"ControlName"	"ImagePanel"
 			"fieldName"		"SubImage"
+<<<<<<< HEAD:game/betterfortress/resource/ui/mainmenuoverride.res
 			"xpos"			"16"
+=======
+			"xpos"			"6"
+>>>>>>> tfft-old/master:game/mod_tf/resource/ui/mainmenuoverride.res
 			"ypos"			"6"
 			"zpos"			"1"
 			"wide"			"14"
@@ -2683,6 +2774,7 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"scaleImage"	"1"
+<<<<<<< HEAD:game/betterfortress/resource/ui/mainmenuoverride.res
 			"image"			"glyph_quit"
 		}				
 	}			
@@ -2752,13 +2844,25 @@
 	}
 	
 	//Items button
+=======
+			"image"			"glyph_options"
+		}		
+	}
+
+>>>>>>> tfft-old/master:game/mod_tf/resource/ui/mainmenuoverride.res
 	"CharacterSetupButton"
 	{
 		"ControlName"	"CExImageButton"
 		"fieldName"		"CharacterSetupButton"
+<<<<<<< HEAD:game/betterfortress/resource/ui/mainmenuoverride.res
 		"xpos"			"c-288"
 		"ypos"			"rs1-18"
 		"wide"			"100"
+=======
+		"xpos"			"c-281"
+		"ypos"			"201"
+		"wide"			"119"
+>>>>>>> tfft-old/master:game/mod_tf/resource/ui/mainmenuoverride.res
 		"tall"			"26"
 		"autoResize"	"0"
 		"pinCorner"		"3"
@@ -2778,9 +2882,23 @@
 		"sound_released"	"UI/buttonclickrelease.wav"
 		"proportionaltoparent"	"1"
 			
+<<<<<<< HEAD:game/betterfortress/resource/ui/mainmenuoverride.res
 		"paintbackground"	"1"
 				
 		"image_drawcolor"	"235 226 202 255"
+=======
+        "border_default"    "MainMenuButtonDefault"
+        "border_armed"      "MainMenuButtonArmed"
+		"paintbackground"   "0"
+            
+        "defaultFgColor_override" "46 43 42 255"
+        "armedFgColor_override" "235 226 202 255"
+        "depressedFgColor_override" "46 43 42 255"
+            
+        "image_drawcolor"   "117 107 94 255"
+        "image_armedcolor"  "235 226 202 255"
+			
+>>>>>>> tfft-old/master:game/mod_tf/resource/ui/mainmenuoverride.res
 		"SubImage"
 		{
 			"ControlName"	"ImagePanel"
@@ -2796,4 +2914,333 @@
 			"image"			"glyph_items"
 		}		
 	}
+<<<<<<< HEAD:game/betterfortress/resource/ui/mainmenuoverride.res
 }
+=======
+
+	"TrainingButton"
+	{
+		"ControlName"	"CExImageButton"
+		"fieldName"		"TrainingButton"
+		"xpos"			"c-160"
+		"ypos"			"201"
+		"wide"			"119"
+		"tall"			"26"
+		"autoResize"	"0"
+		"pinCorner"		"3"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		"textinsetx"	"25"
+		"use_proportional_insets" "1"
+		"font"			"HudFontSmallBold"
+		"textAlignment"	"west"
+		"dulltext"		"0"
+		"brighttext"	"0"
+		"default"		"1"
+		"command"		"offlinepractice"
+		"labeltext"		"#MMenu_PlayList_Training_Button"
+		"sound_depressed"	"UI/buttonclick.wav"
+		"sound_released"	"UI/buttonclickrelease.wav"
+		"proportionaltoparent"	"1"
+			
+        "border_default"    "MainMenuButtonDefault"
+        "border_armed"      "MainMenuButtonArmed"
+		"paintbackground"   "0"
+            
+        "defaultFgColor_override" "46 43 42 255"
+        "armedFgColor_override" "235 226 202 255"
+        "depressedFgColor_override" "46 43 42 255"
+            
+        "image_drawcolor"   "117 107 94 255"
+        "image_armedcolor"  "235 226 202 255"
+			
+		"SubImage"
+		{
+			"ControlName"	"ImagePanel"
+			"fieldName"		"SubImage"
+			"xpos"			"6"
+			"ypos"			"6"
+			"zpos"			"1"
+			"wide"			"14"
+			"tall"			"14"
+			"visible"		"1"
+			"enabled"		"1"
+			"scaleImage"	"1"
+			"image"			"glyph_practice"
+		}		
+	}
+	
+	"QuitButton"
+	{
+		"ControlName"	"CExImageButton"
+		"fieldName"		"QuitButton"
+		"xpos"			"c-160"
+		"ypos"			"240"
+		"wide"			"119"
+		"tall"			"20"
+		"autoResize"	"0"
+		"pinCorner"		"3"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		"textinsetx"	"25"
+		"use_proportional_insets" "1"
+		"font"			"HudFontSmallBold"
+		"textAlignment"	"west"
+		"dulltext"		"0"
+		"brighttext"	"0"
+		"default"		"1"
+		"command"		"engine tfft_quit"
+		"labeltext"		"#TF_Quit_Title"
+		"sound_depressed"	"UI/buttonclick.wav"
+		"sound_released"	"UI/buttonclickrelease.wav"
+		"proportionaltoparent"	"1"
+			
+        "border_default"    "MainMenuButtonDefault"
+        "border_armed"      "MainMenuButtonArmed"
+		"paintbackground"   "0"
+            
+        "defaultFgColor_override" "46 43 42 255"
+        "armedFgColor_override" "235 226 202 255"
+        "depressedFgColor_override" "46 43 42 255"
+            
+        "image_drawcolor"   "117 107 94 255"
+        "image_armedcolor"  "235 226 202 255"
+			
+		"SubImage"
+		{
+			"ControlName"	"ImagePanel"
+			"fieldName"		"SubImage"
+			"xpos"			"4"
+			"ypos"			"4"
+			"zpos"			"1"
+			"wide"			"13"
+			"tall"			"13"
+			"visible"		"1"
+			"enabled"		"1"
+			"scaleImage"	"1"
+			"image"			"glyph_quit"
+		}		
+	}
+	
+	"CreateServersButton"
+	{
+		"ControlName"	"CExImageButton"
+		"fieldName"		"CreateServersButton"
+		"xpos"			"c-64"
+		"ypos"			"148"
+		"wide"			"20"
+		"tall"			"20"
+		"autoResize"	"0"
+		"pinCorner"		"3"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		"textinsetx"	"25"
+		"use_proportional_insets" "1"
+		"font"			"HudFontSmallBold"
+		"textAlignment"	"west"
+		"dulltext"		"0"
+		"brighttext"	"0"
+		"default"		"1"
+		"command"		"OpenCreateMultiplayerGameDialog"
+		"labeltext"		""
+		"sound_depressed"	"UI/buttonclick.wav"
+		"sound_released"	"UI/buttonclickrelease.wav"
+		"proportionaltoparent"	"1"
+			
+        "border_default"    "MainMenuMiniButtonDefault"
+        "border_armed"      "MainMenuMiniButtonArmed"
+		"paintbackground"   "0"
+            
+        "defaultFgColor_override" "46 43 42 255"
+        "armedFgColor_override" "46 43 42 255"
+        "depressedFgColor_override" "46 43 42 255"
+            
+        "image_drawcolor"   "235 226 202 255"
+        "image_armedcolor"  "235 226 202 255"
+			
+		"SubImage"
+		{
+			"ControlName"	"ImagePanel"
+			"fieldName"		"SubImage"
+			"xpos"			"4"
+			"ypos"			"4"
+			"zpos"			"1"
+			"wide"			"13"
+			"tall"			"13"
+			"visible"		"1"
+			"enabled"		"1"
+			"scaleImage"	"1"
+			"image"			"glyph_create"
+		}		
+	}
+	
+	"AchievementsButtonSDK"
+	{
+		"ControlName"	"CExImageButton"
+		"fieldName"		"AchievementsButtonSDK"
+		"xpos"			"c-84"
+		"ypos"			"148"
+		"wide"			"20"
+		"tall"			"20"
+		"autoResize"	"0"
+		"pinCorner"		"3"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		"textinsetx"	"25"
+		"use_proportional_insets" "1"
+		"font"			"HudFontSmallBold"
+		"textAlignment"	"west"
+		"dulltext"		"0"
+		"brighttext"	"0"
+		"default"		"1"
+		"command"		"OpenAchievementsDialog"
+		"labeltext"		""
+		"sound_depressed"	"UI/buttonclick.wav"
+		"sound_released"	"UI/buttonclickrelease.wav"
+		"proportionaltoparent"	"1"
+			
+        "border_default"    "MainMenuMiniButtonDefault"
+        "border_armed"      "MainMenuMiniButtonArmed"
+		"paintbackground"   "0"
+            
+        "defaultFgColor_override" "46 43 42 255"
+        "armedFgColor_override" "46 43 42 255"
+        "depressedFgColor_override" "46 43 42 255"
+            
+        "image_drawcolor"   "235 226 202 255"
+        "image_armedcolor"  "235 226 202 255"
+			
+		"SubImage"
+		{
+			"ControlName"	"ImagePanel"
+			"fieldName"		"SubImage"
+			"xpos"			"4"
+			"ypos"			"4"
+			"zpos"			"1"
+			"wide"			"13"
+			"tall"			"13"
+			"visible"		"1"
+			"enabled"		"1"
+			"scaleImage"	"1"
+			"image"			"glyph_achievements"
+		}		
+	}
+
+	"TF2SettingsButtonSDK"
+	{
+		"ControlName"	"CExImageButton"
+		"fieldName"		"TF2SettingsButtonSDK"
+		"xpos"			"c-64"
+		"ypos"			"176"
+		"wide"			"20"
+		"tall"			"20"
+		"autoResize"	"0"
+		"pinCorner"		"3"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		"textinsetx"	"25"
+		"use_proportional_insets" "1"
+		"font"			"HudFontSmallBold"
+		"textAlignment"	"west"
+		"dulltext"		"0"
+		"brighttext"	"0"
+		"default"		"1"
+		"command"		"opentf2options"
+		"labeltext"		""
+		"sound_depressed"	"UI/buttonclick.wav"
+		"sound_released"	"UI/buttonclickrelease.wav"
+		"proportionaltoparent"	"1"
+			
+        "border_default"    "MainMenuMiniButtonDefault"
+        "border_armed"      "MainMenuMiniButtonArmed"
+		"paintbackground"   "0"
+            
+        "defaultFgColor_override" "46 43 42 255"
+        "armedFgColor_override" "46 43 42 255"
+        "depressedFgColor_override" "46 43 42 255"
+            
+        "image_drawcolor"   "235 226 202 255"
+        "image_armedcolor"  "235 226 202 255"
+			
+		"SubImage"
+		{
+			"ControlName"	"ImagePanel"
+			"fieldName"		"SubImage"
+			"xpos"			"4"
+			"ypos"			"4"
+			"zpos"			"1"
+			"wide"			"13"
+			"tall"			"13"
+			"visible"		"1"
+			"enabled"		"1"
+			"scaleImage"	"1"
+			"image"			"glyph_multiplayer"
+		}		
+	}
+	
+	"MenuBG"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"MenuBG"
+		"xpos"			"c-290"
+		"ypos"			"120"
+		"zpos"			"-5"
+		"wide"			"260"
+		"tall"			"150"
+		"visible"		"1"
+
+		"border"		"MainMenuBGBorder"
+
+		"TitleLabel"
+		{
+			"ControlName"	"CExLabel"
+			"fieldName"		"TitleLabel"
+			"font"			"HudFontSmallBold"
+			"labelText"		"Team Fortress 2: Field Tested"
+			"textAlignment"	"west"
+			"xpos"			"12"
+			"ypos"			"0"
+			"wide"			"f0"
+			"tall"			"30"
+			"autoResize"	"0"
+			"pinCorner"		"0"
+			"visible"		"1"
+			"enabled"		"1"
+			"textinsetx"	"0"
+			"fgcolor_override"	"235 227 203 255"
+		}
+	}
+
+
+// The following items I cant remove rn
+	"ReportPlayerButton"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"ReportPlayerButton"
+		"visible"	"0"
+	}
+	"RequestCoachButton"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldName"		"RequestCoachButton"
+		"visible"	"0"
+	}
+	"MutePlayersButton"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldName"		"MutePlayersButton"
+		"visible"	"0"
+	}
+	"CallVoteButton"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldName"		"CallVoteButton"
+		"visible"	"0"
+	}
+}
+>>>>>>> tfft-old/master:game/mod_tf/resource/ui/mainmenuoverride.res
