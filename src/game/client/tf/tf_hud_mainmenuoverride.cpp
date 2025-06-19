@@ -589,13 +589,13 @@ void CHudMainMenuOverride::ApplySchemeSettings( IScheme *scheme )
 	m_pMOTDURLButton = dynamic_cast<CExButton*>( m_pMOTDPanel->FindChildByName("MOTD_URLButton") );
 
 
-	m_pNotificationsShowPanel->SetVisible( true );
+	//m_pNotificationsShowPanel->SetVisible( true );
 
 	m_iNotiPanelWide = m_pNotificationsPanel->GetWide();
 
 	// m_pMOTDShowPanel shows that the player has an unread MOTD. Pressing it pops up the MOTD.
-	m_pMOTDShowPanel = dynamic_cast<vgui::EditablePanel*>( FindChildByName("MOTD_ShowButtonPanel") );
-	m_pMOTDShowPanel->SetVisible(true);
+	/*m_pMOTDShowPanel = dynamic_cast<vgui::EditablePanel*>(FindChildByName("MOTD_ShowButtonPanel"));
+	m_pMOTDShowPanel->SetVisible(true);*/
 	vgui::EditablePanel* pHeaderContainer = dynamic_cast<vgui::EditablePanel*>( m_pMOTDPanel->FindChildByName( "MOTD_HeaderContainer" ) );
 	if ( pHeaderContainer )
 	{

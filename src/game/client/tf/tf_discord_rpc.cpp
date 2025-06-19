@@ -13,7 +13,7 @@
 // memdbgon.h must be the last include in a cpp file!!!!
 #include "tier0/memdbgon.h"
 
-#define DISCORD_APP_ID "1378157979815120916"
+#define DISCORD_APP_ID "1385302656829886516"
 
 //#define DISCORD_UPDATE_RATE 10.0f
 

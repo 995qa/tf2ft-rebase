@@ -1690,47 +1690,9 @@ void CPlayerInventory::SOCacheSubscribed( const CSteamID & steamIDOwner, GCSDK::
 		return;
 	}
 
-	// Find or create the item shared object cache
-	CSharedObjectTypeCache* pTypeCache = m_pSOCache->CreateTypeCache(CEconItem::k_nTypeID);
-	if (!pTypeCache)
-		return;
+	// add all the items already in the inventoryAdd commentMore actions
+	CSharedObjectTypeCache* pTypeCache = m_pSOCache->FindTypeCache(CEconItem::k_nTypeID);
 
-	// Get the mod's item definition map
-	const CEconItemSchema::ItemDefinitionMap_t& itemMap = GetItemSchema()->GetItemDefinitionMap();
-
-	// Clear the shared object cache (this removes unwanted items)
-	pTypeCache->RemoveAllObjectsWithoutDeleting();
-
-	FOR_EACH_MAP_FAST(itemMap, i)
-	{
-		GameItemDefinition_t* pItemDef = dynamic_cast<GameItemDefinition_t*>(itemMap[i]);
-
-		// Ignore hidden items
-		if (pItemDef->IsHidden())
-			continue;
-
-		// No base items
-		if (pItemDef->IsBaseItem())
-			continue;
-
-		if (!pItemDef->ShouldShowInArmory())
-			continue;
-
-		// Create the item
-		CEconItem* pItem = new CEconItem();
-		pItem->SetAccountID(GetOwner().GetAccountID());
-		pItem->SetItemID(pItemDef->GetDefinitionIndex());
-		pItem->SetDefinitionIndex(pItemDef->GetDefinitionIndex());
-
-		// Set item properties
-		pItem->SetQuality(pItemDef->GetQuality());						// set quality
-		pItem->SetItemLevel(RandomInt(1, 100));							// roll the item level
-		pItem->SetOrigin(eEconItemOrigin::kEconItemOrigin_Drop);			// set the item's origin
-		pItem->SetQuantity(1);												// item quantity
-
-		// Add the item to the so cache
-		pTypeCache->AddObject(pItem);
-	}
 	if( pTypeCache )
 	{
 /*		CEconItem* nItem = (CEconItem*)pTypeCache->GetObject(0);
@@ -1769,13 +1731,6 @@ void CPlayerInventory::SOCacheSubscribed( const CSteamID & steamIDOwner, GCSDK::
 		InventoryManager()->SaveAckFile();
 	}
 
-	// Ensure all items are visible in the inventoryAdd commentMore actions
-	for (int i = 0; i < GetItemCount(); i++)
-	{
-		C_EconItemView* viewItem = GetItem(i);
-		InventoryManager()->AcknowledgeItem(viewItem, true);
-		viewItem->SetInventoryPosition(i + 1);
-	}
 
 #endif
 }

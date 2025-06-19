@@ -1,10 +1,6 @@
 "GameInfo"
 {
-<<<<<<< HEAD:game/betterfortress/gameinfo.txt
-	game					"Better Fortress 2"
-=======
 	game					"Team Fortress 2: Field Tested"
->>>>>>> tfft-old/master:game/mod_tf/gameinfo.txt
 	type 					multiplayer_only
 	nomodels				1
 	nohimodel 				1
