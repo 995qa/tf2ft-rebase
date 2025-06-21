@@ -55,7 +55,7 @@ I'm not an animator or modeler, so I have used the following mod's assets for th
 
 [TF2 All-Class Crowbar (SFM Beta version)](https://gamebanana.com/mods/198771)
 
-SilentFox3 did texture/model edits to the crowbar found in the SFM Beta leak and also re-rigged it.
+SilentFox3 did texture/model edits to the crowbar found in the SFM Beta leak and also made the animations for it.
 
 [AK47](https://gamebanana.com/mods/197796)
 
