@@ -3,7 +3,7 @@ This mod uses BF2's codebase, which adds many new features to TF2.
 
 > [!WARNING]
 > - This mod uses BF2's codebase, which adds many new features to TF2.
-> - Check out their [discord]()
+> - Check out their [discord](https://discord.gg/NM82mujJsf)
 > - Features some community fixes which i DO NOT CLAIM as mine, but credited.
 > - Feel free to use my code for your own mods! i just wanted to improve TF2 a little, and add custom stuff.
 > - More coders may be needed (i am not a full expert coder, but i try my best).
