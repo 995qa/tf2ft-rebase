@@ -1,15 +1,11 @@
-<<<<<<< HEAD
-# Wanna help? join us on [Discord](https://discord.gg/NM82mujJsf).
-> [!IMPORTANT]
-> ### Collection of changes that could end up in LIVE-TF2, the goal is to try making as much stuff as possible less hardcoded, to give mappers and vscripters more customization like, Custom map titles, killicons, and so on.
-> ## This is also meant to be as a "Playground" build, demonstating how TF2 could function with community fixes and such, this is just for fun feel free to fork, or use
+# Team Fortress 2: Field Tested
+## This mod uses BF2's codebase, which adds many new features to TF2.
 
 > [!WARNING]
 > - Features some community fixes which i DO NOT CLAIM as mine, but credited (if we forgot please reach us on Discord).
 > - Feel free to use my code for your own mods! i just wanted to improve TF2 a little, and add custom stuff.
 > - More coders may be needed (i am not a full expert coder, but i try my best).
 
-![new_tf2_logo](https://github.com/user-attachments/assets/7e53da2e-abd5-4d16-bbb3-7e37997372a5)
 # FEATURES:
 - External scenes loader  (Mapbase | .VCD, Faceposer stuff)
 - Pyrovision Support keyvalue/netprop for tf_gamerules 
@@ -47,66 +43,9 @@
 - Customizable sounds (Death,Hurt,Collide,Idle)
 - Spawn with Dispenser Y/N
 - OnPanicStart, OnPanicEnd Outputs
-=======
-# TF2: Field Tested
-
-TF2:FT is a mod for TF2 which is planned to add new weapons and revert some weapons.
-I have reverted the following weapons:
-
-Baby Face Blaster
-
-Backburner
-
-Bushwacka
-
-Razorback
-
-Tribalman's Shiv
-
-Your Eternal Reward
-
-
-
-Some weapons have some stats reverted, but some stats stay:
-
-Spycicle (Now has Silent Killer)
-
-Weapons I may add:
-
-
-## Fast-Thrower (Pyro) (to-do)
-
-+30% Flame Velocity
-
-+30% Damage
-
--50% Afterburn time
-
-+100% Airblast cost
-
-+20% Ammo cost
-
-
-## Kalashnikov (Sniper) (implemented, need to change backpack icon)
-
-(Comparing to Sniper SMG)
-
-+100% damage
-
--25% bullet spread
-
-+25% reload time
-
--15 Health
-
-No random crits
-
-## Crowbar (All-Class) (implemented, need to fix backpack icon)
-
-Reskin of the Frying Pan
-
-
-## If you have any weapon ideas, dm me
+# TF2FT Weapons
+- Added The Crowbar
+- Added The Kalashnikov
 
 # Credits
 
@@ -119,11 +58,6 @@ SilentFox3 did texture/model edits to the crowbar found in the SFM Beta leak and
 [AK47](https://gamebanana.com/mods/197796)
 
 I used the model and textures to make the AK.
-
-
-
-
->>>>>>> tfft-old/master
 
 ## License
 The SDK is licensed to users on a non-commercial basis under the [SOURCE 1 SDK LICENSE](LICENSE), which is contained in the [LICENSE](LICENSE) file in the root of the repository.
