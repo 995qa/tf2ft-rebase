@@ -1,4 +1,4 @@
-$Macro OUTBINNAME "betterfortress"
+$Macro OUTBINNAME "tfft"
 
 $Conditional "MOD_LAUNCHER" "1"
 
