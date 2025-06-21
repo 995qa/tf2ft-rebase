@@ -1,5 +1,4 @@
 # Team Fortress 2: Field Tested
-This mod uses BF2's codebase, which adds many new features to TF2.
 
 > [!WARNING]
 > - This mod uses BF2's codebase, which adds many new features to TF2.
