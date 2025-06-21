@@ -2,13 +2,13 @@
 
 # Demo files
 *.dem
-mod_tf/demos
+tfft/demos
 
 # Map files
-mod_tf/maps
+tfft/maps
 
 # Configs
-mod_tf/cfg
+tfft/cfg
 
 # Visual Studio 
 *.suo
@@ -46,8 +46,10 @@ server.pdb
 server.dll
 server.lib
 
-mod_tf_win64.exe
-mod_tf_win64.pdb
+tfft_win64.exe
+tfft_win64.pdb
+betterfortress_win64.exe
+betterfortress_win64.pdb
 
 client.so
 client.so.dbg
@@ -829,7 +831,7 @@ FodyWeavers.xsd
 /game/betterfortress/downloadlists/pl_badwater.lst
 /game/betterfortress/maps/graphs/cp_well.ain
 /game/mod_hl2mp_win64.exe
-/game/mod_tf_win64.exe
+/game/tfft_win64.exe
 game/betterfortress/maps/graphs/pl_badwater.ain
 game/betterfortress/sound/mvm/mobster_firebrand_r1a/mobster_activatecharge01.mp3
 game/betterfortress/sound/mvm/mobster_firebrand_r1a/mobster_activatecharge02.mp3
