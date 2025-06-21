@@ -1,8 +1,10 @@
 # Team Fortress 2: Field Tested
-## This mod uses BF2's codebase, which adds many new features to TF2.
+This mod uses BF2's codebase, which adds many new features to TF2.
 
 > [!WARNING]
-> - Features some community fixes which i DO NOT CLAIM as mine, but credited (if we forgot please reach us on Discord).
+> - This mod uses BF2's codebase, which adds many new features to TF2.
+> - Check out their [discord]()
+> - Features some community fixes which i DO NOT CLAIM as mine, but credited.
 > - Feel free to use my code for your own mods! i just wanted to improve TF2 a little, and add custom stuff.
 > - More coders may be needed (i am not a full expert coder, but i try my best).
 
@@ -58,6 +60,8 @@ SilentFox3 did texture/model edits to the crowbar found in the SFM Beta leak and
 [AK47](https://gamebanana.com/mods/197796)
 
 I used the model and textures to make the AK.
+
+## Other credits are in-game, which ill add soon.
 
 ## License
 The SDK is licensed to users on a non-commercial basis under the [SOURCE 1 SDK LICENSE](LICENSE), which is contained in the [LICENSE](LICENSE) file in the root of the repository.
