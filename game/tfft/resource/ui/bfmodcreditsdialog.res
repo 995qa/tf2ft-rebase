@@ -1,6 +1,6 @@
-"Resource\UI\TFModCreditssDialog.res"
+"Resource\UI\BFModCreditssDialog.res"
 {
-	"TFModCreditsDialog"
+	"BFModCreditsDialog"
 	{
 		"ControlName"		"EditablePanel"
 		"fieldName"		"TFAdvancedOptionsDialog"
@@ -30,7 +30,7 @@
 		"ControlName"	"CExLabel"
 		"fieldName"		"TitleLabel"
 		"font"			"HudFontMediumBold"
-		"labelText"		"#TF_ModGameTitle"
+		"labelText"		"BETTER FORTRESS"
 		"textAlignment"	"center"
 		"xpos"			"0"
 		"ypos"			"0"
@@ -57,7 +57,7 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"tabPosition"	"0"
-		"labelText"		"#GameUI_Ok"
+		"labelText"		"Back"
 		"font"			"HudFontSmallBold"
 		"textAlignment"	"center"
 		"dulltext"		"0"

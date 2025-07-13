@@ -7,14 +7,6 @@
 		"subimage" "glyph_vr"
 		"OnlyWhenVREnabled" "1"
 	}
-	"DisconnectButton"
-	{
-		"label"			"#TF_Disconnect"
-		"command"		"disconnect"
-		"OnlyInGame"	"1"
-		"subimage"		"glyph_quit"
-		"tooltip"		""
-	}
 	// These buttons are only shown while in-game
 	// and also are positioned by the .res file
 	"CallVoteButton"

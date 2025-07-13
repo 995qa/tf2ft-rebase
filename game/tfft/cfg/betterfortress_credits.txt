@@ -20,14 +20,7 @@ DESCRIPTION INFO_OPTIONS
 		Vvis - Give_econ command, Mini-Dispenser cost"
 		{ BOOL }
 		{ "1" }
-	}	
-	"credit1_3"
-	{
-		"Published by MIXERRULES"
-		"https://wiki.tf2sm.info"
-		{ BOOL }
-		{ "1" }
-	}	
+	}
 	"category2"
 	{
 		"Community Help/Contributions"

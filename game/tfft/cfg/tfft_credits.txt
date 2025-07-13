@@ -1,0 +1,49 @@
+VERSION 1.0
+DESCRIPTION INFO_OPTIONS
+{
+	"category1"
+	{
+		"(Tyler the) Creator"
+		{ CATEGORY }
+	}
+	"credit1_1"
+	{
+		"995 - Creator"
+		"Discord: @san.francisco"
+		{ BOOL }
+		{ "1" }
+	}
+	"credit1_2"
+	{
+		"ALIEN31ITA - BF2"
+		"https://github.com/ALIEN31ITA/Better-Fortress-2"
+		{ BOOL }
+		{ "1" }
+	}
+	"category2"
+	{
+		"Models/Anim."
+		{ CATEGORY }
+	}
+	"credit2_1"
+	{
+		"SilentFox3 - TF2 All-Class Crowbar (SFM Beta version)"
+		"https://gamebanana.com/mods/198771"
+		{ BOOL }
+		{ "1" }
+	}
+	"credit2_2"
+	{
+		"DanielAwesomo - AK47"
+		"https://gamebanana.com/mods/197796"
+		{ BOOL }
+		{ "1" }
+	}
+	"credit2_3"
+	{
+		"TF2: OG (Team Comtress 2) weapon materials"
+		"https://mastercoms.itch.io/tc2"
+		{ BOOL }
+		{ "1" }
+	}
+}

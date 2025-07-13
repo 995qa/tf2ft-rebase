@@ -9,6 +9,7 @@ tfft/maps
 
 # Configs
 tfft/cfg
+game/tfft/videoconfig_linux.cfg
 
 # Visual Studio 
 *.suo
@@ -30,6 +31,12 @@ ipch
 *.vcxproj
 *.sln
 
+# Ninja
+src/.ninja_deps
+src/.ninja_log
+src/compile_commands.json
+
+
 # OSX/Linux build products
 *.mak
 *.mak.vpc_crc
@@ -37,6 +44,11 @@ ipch
 obj*/
 !devtools/*.mak
 !utils/smdlexp/smdlexp.mak
+*linux64
+*.so
+
+# Stats
+*.dmx
 
 # Specific Source build products
 client.pdb

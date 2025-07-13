@@ -626,6 +626,59 @@
 			"image"			"glyph_message"
 		}		
 	}
+
+	"ModCreditsButton"
+	{
+		"ControlName"	"CExImageButton"
+		"fieldName"		"ModCreditsButton"
+		"xpos"			"c-260"
+		"ypos"			"240"
+		"wide"			"20"
+		"tall"			"20"
+		"autoResize"	"0"
+		"pinCorner"		"3"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		"textinsetx"	"25"
+		"use_proportional_insets" "1"
+		"font"			"HudFontSmallBold"
+		"textAlignment"	"west"
+		"dulltext"		"0"
+		"brighttext"	"0"
+		"default"		"1"
+		"command"		"engine tfft_credits"
+		"labeltext"		""
+		"sound_depressed"	"UI/buttonclick.wav"
+		"sound_released"	"UI/buttonclickrelease.wav"
+		"proportionaltoparent"	"1"
+
+        "border_default"    "MainMenuButtonDefault"
+        "border_armed"      "MainMenuButtonArmed"
+		"paintbackground"   "0"
+
+        "defaultFgColor_override" "46 43 42 255"
+        "armedFgColor_override" "235 226 202 255"
+        "depressedFgColor_override" "46 43 42 255"
+
+        "image_drawcolor"   "117 107 94 255"
+        "image_armedcolor"  "235 226 202 255"
+
+		"SubImage"
+		{
+			"ControlName"	"ImagePanel"
+			"fieldName"		"SubImage"
+			"xpos"			"4"
+			"ypos"			"4"
+			"zpos"			"1"
+			"wide"			"13"
+			"tall"			"13"
+			"visible"		"1"
+			"enabled"		"1"
+			"scaleImage"	"1"
+			"image"			"glyph_message"
+		}
+	}
 	
 	// from better fortress	
 	"MOTD_Panel"
